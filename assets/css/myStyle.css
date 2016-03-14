@@ -6,3 +6,14 @@ html, body, input, select, textarea {
 .firstline {
     font-family: 'Droid Serif', serif;
 }
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100%;
+  margin: auto;
+}
+
+.carousel-inner > .item {
+    max-height: 400px;
+    vertical-align: text-bottom;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us" ng-app="myApp">
+<html lang="en-us">
     <head>
         <title>Huang Song</title>
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -7,57 +7,57 @@
 
         <!-- load bootstrap and fontawesome via CDN -->
         <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"></script>
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.css"></script>   
+        
         <!-- load google fonts -->
         <link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
         <!-- load my own style -->
         <link rel="stylesheet" type="text/css" href="./assets/css/myStyle.css">
         
-        <!-- load angular via CDN -->
-        <script src="https://code.angularjs.org/1.3.0-rc.1/angular.min.js"></script>
-        <script src="https://code.angularjs.org/1.3.0-rc.1/angular-route.js"></script>
-        <!-- load my own js files -->
-        <script src="./app/app.module.js"></script>
-        <script src="./app/app.routes.js"></script>
-        <script src="./app/components/home/homeController.js"></script>
-        <script src="./app/components/blog/blogController.js"></script>
-        <script src="./app/components/about/aboutController.js"></script>
+
     </head>
-    <body>
-        
-        <header>
-            <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header navbar-left">
-                    <a class="navbar-brand" href="/">Huang Song</a>
-                </div>
+    <body ng-app="myApp">
 
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="#blog"><i class="fa fa-comment"></i> Blog</a></li>
-                    <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
-                </ul>
-            </div>
-            </nav>
-        </header>
-        
-        <div class="container">
-
-            <div ng-controller="mainController">
-            
-                <h1 class="firstline"> {{greet_message}} </h1>
-                
-            </div>
-            
-		</div>
-        
         <!-- MAIN CONTENT AND INJECTED VIEWS -->
         <div>
             
             <!-- angular templating -->
             <!-- this is where content will be injected -->
+            <!--
             <div ng-view></div>
+            -->
+            <div ui-view=""></div>
+            
         </div>
-
+        
+        
+        <!-- load jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        
+        
+        <!-- load angular via CDN -->
+        <!-- 
+        <script src="https://code.angularjs.org/1.3.0-rc.1/angular.min.js"></script>
+        <script src="https://code.angularjs.org/1.3.0-rc.1/angular-route.js"></script>
+        -->
+        <script src="node_modules/angular/angular.js"></script>
+        <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+        
+        <!-- load bootstrap js-->
+        <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        
+        <!-- load my own js files -->
+        <script src="./app/app.module.js"></script>
+        <script src="./app/app.routes.js"></script>
+        <script src="./app/components/about/about.controller.js"></script>
+        <script src="./app/components/about/about.js"></script>
+        <script src="./app/components/blog/blog.controller.js"></script>
+        <script src="./app/components/blog/blog.js"></script>
+        <script src="./app/components/home/home.controller.js"></script>
+        <script src="./app/components/home/home.js"></script>
+        <script src="./app/components/navbar/navbar.controller.js"></script>
     </body>
 </html>

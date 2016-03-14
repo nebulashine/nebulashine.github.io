@@ -1,0 +1,24 @@
+{
+  "name": "huangsong_me",
+  "version": "1.0.0",
+  "description": "my first npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nebulashine/nebulashine.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nebulashine/nebulashine.github.io/issues"
+  },
+  "homepage": "https://github.com/nebulashine/nebulashine.github.io#readme",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-ui-router": "^0.2.18",
+    "bootstrap": "^3.3.6"
+  }
+}

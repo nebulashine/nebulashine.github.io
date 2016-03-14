@@ -1,4 +1,14 @@
-var myApp = angular.module('myApp', ['ngRoute']);
+'use strict';
+
+var myApp = angular.module('myApp', ['ui.router']);
+
+myApp.config(function($stateProvider, $urlRouterProvider) {
+  //
+  // For any unmatched url, redirect to /
+  $urlRouterProvider.otherwise("/");
+
+});
+
 
 myApp.controller('mainController', ['$scope', '$timeout', function($scope, $timeout) {
     
