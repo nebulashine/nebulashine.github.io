@@ -1,12 +1,35 @@
-
+/*------------------------------------
+// General style
+------------------------------------*/
 html, body, input, select, textarea {
     font-size: 1.05em;
 }
 
-.firstline {
-    font-family: 'Droid Serif', serif;
+
+
+/*------------------------------------
+// Customized navbar
+------------------------------------*/
+
+.navbar-time {
+    display: inline-block;
+    margin-left: 15px;
 }
 
+@media (min-width: 768px) {
+    .navbar-time {
+        //display: inline-block;
+        //border: 2px solid blue;
+        margin-left: 20px;
+        margin-top: 13px;
+    }
+}
+
+
+
+/*------------------------------------
+// Customized carousel
+------------------------------------*/
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   width: 100%;
@@ -16,4 +39,12 @@ html, body, input, select, textarea {
 .carousel-inner > .item {
     max-height: 400px;
     vertical-align: text-bottom;
+}
+
+
+/*------------------------------------
+// Others
+------------------------------------*/
+.firstline {
+    font-family: 'Droid Serif', serif;
 }
