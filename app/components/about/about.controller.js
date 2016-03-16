@@ -39,7 +39,7 @@ myApp.controller('AboutController', ['$scope', 'uiGmapGoogleMapApi', function($s
           });
         }
         }
-        google.maps.event.addDomListener(window, 'load', maplize);
+        google.maps.event.addDomListener(window, 'load', initialize);
     });
     
 }]);
