@@ -7,3 +7,29 @@
 
     <p>{{ message }}</p>
 </div>
+
+
+<div id="blog-map"></div>
+
+
+<!-- add google map -->
+<script>
+    function initMap() {
+        var mapDiv = document.getElementById('blog-map');
+        var map = new google.maps.Map(mapDiv, {
+            /*
+            fullscreenControl: true,
+            heading: 123,
+            panControl: true,
+            */
+            
+            scrollwheel: false,
+            center: {lat: 37.432228, lng: -122.164524},
+            zoom: 15
+        });
+    } 
+</script>
+
+<!-- load google js map API -->
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+async defer></script>

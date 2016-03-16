@@ -26,7 +26,7 @@
     </div>
 
     <div class="item">
-        <img src="/assets/img/2.jpg" alt="Chania">
+        <img src="/assets/img/3.jpg" alt="greece">
         <div class="carousel-caption">
             <h3>{{ msg_2 }}</h3>
             <p>{{ nameInit }}</p>
@@ -34,7 +34,7 @@
     </div>
 
     <div class="item">
-        <img src="/assets/img/3.jpg" alt="Flower">
+        <img src="/assets/img/2.jpg" alt="sea">
         <div class="carousel-caption">
             <h3>{{ msg_3 }}</h3>
             <p>{{ nameInit }}</p>
@@ -52,3 +52,38 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+
+
+<script type="text/javascript">
+var pic;
+
+$(document).ready(function () {
+//$(window).on("load", function() {
+    $( ".carousel .carousel-inner .item" ).each(function( index ) {
+        
+         //$(this).css("margin-top",-(($(this.HTMLParamElement).height() - $(this).height())/4) + 'px');
+        
+        item = $(this);
+        
+        
+        if(item.children()[0].height == 0){
+            setTimeout(function(){
+                console.log('wait for img loaded');
+            },250);
+        }
+
+        itemH = $(this).height();
+        imgH = $(this).children()[0].height;
+        margin_top = itemH - imgH;
+
+        console.log('id: ' + index + ' itemH: ' + itemH);
+        console.log('id: ' + index + ' imgH: ' + imgH);
+
+
+       //$(this).children()[0].css("margin-top", margin_top + 'px');
+       //$(this).children()[0].style.marginTop = margin_top + 'px';
+       //$(this).css("margin-top", -150 + 'px');
+
+    }
+)});
+</script>

@@ -1,0 +1,10 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/Users/HuangSong/Desktop/huangsong_me/bower_components/lodash/vendor/underscore/underscore.js",
+        "/Users/HuangSong/Desktop/huangsong_me/bower_components/lodash/vendor/underscore/underscore-min.js",
+        "/Users/HuangSong/Desktop/huangsong_me/bower_components/lodash/vendor/underscore/test/utility.js",
+        "/Users/HuangSong/Desktop/huangsong_me/bower_components/lodash/vendor/underscore/test/objects.js",
+        "/Users/HuangSong/Desktop/huangsong_me/bower_components/lodash/vendor/underscore/test/functions.js",
+        "/Users/HuangSong/Desktop/huangsong_me/app/components/about/about.js"
+    ]
+}

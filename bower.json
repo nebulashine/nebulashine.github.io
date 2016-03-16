@@ -1,0 +1,27 @@
+{
+  "name": "huangsong_me",
+  "description": "my first npm",
+  "main": "index.js",
+  "authors": [
+    "nebulashine <nebulashine.song@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/nebulashine/nebulashine.github.io",
+  "moduleType": [
+    "node"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-ui-map": "^0.5.0",
+    "angular-ui-router": "^0.2.18",
+    "angular-google-maps": "^2.3.2"
+  }
+}
