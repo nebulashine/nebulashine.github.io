@@ -97,6 +97,9 @@ html, body, input, select, textarea {
 ------------------------------------*/
 .section-container {
     margin-top: 80px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section-container h3 {
