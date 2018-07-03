@@ -89,3 +89,17 @@ html, body, input, select, textarea {
 .firstline {
     font-family: 'Droid Serif', serif;
 }
+
+
+
+/*------------------------------------
+// About page - privacy policy
+------------------------------------*/
+.section-container {
+    margin-top: 80px;
+}
+
+.section-container h3 {
+    /* grey */
+    color: #A9A9A9;
+}
